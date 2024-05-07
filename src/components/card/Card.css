@@ -1,0 +1,28 @@
+.cardContainer {
+  border-radius: 5px;
+  text-align: left;
+  font-family: sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardContainer h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: black;
+  font-variant: small-caps;
+}
+
+.cardContainer p {
+  font-size: 1.1rem;
+  padding: 10px;
+  text-align: justify;
+  background-color: rgb(177, 198, 238);
+  border-radius: 8px;
+  color: black;
+  height: 60%;
+  overflow: hidden;
+}

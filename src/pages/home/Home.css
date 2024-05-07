@@ -1,0 +1,43 @@
+body {
+  background: radial-gradient(
+    circle at center,
+    red 0%,
+    yellow 20%,
+    green 40%,
+    blue 60%
+  );
+  background-size: 500% 500%;
+  animation: gradient 15s linear infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.home {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+}
+.card {
+  width: calc(25% - 20px);
+  height: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: hsla(50, 50%, 100%, 0.664);
+  text-decoration: none;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}

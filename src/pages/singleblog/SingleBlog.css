@@ -1,0 +1,109 @@
+.blog-card {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.name-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog {
+  margin-top: 20px;
+}
+
+.blog p {
+  color: black;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.add-comment {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.add-comment input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.add-comment button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topic {
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.topic hr {
+  width: 45%;
+  border: none;
+  border-top: 1px solid black;
+  margin-top: 8px;
+}
+
+.comments li {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-header b {
+  margin-right: 10px;
+}
+
+.comment {
+  font-size: 1rem;
+  background-color: hsl(218, 8%, 80%);
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fa-pen-to-square,
+.fa-trash,
+.fa-paper-plane {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.fa-pen-to-square {
+  color: blue;
+}
+.fa-trash {
+  color: red;
+  margin-left: 20px;
+}
