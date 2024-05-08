@@ -16,8 +16,9 @@ const SingleBlog = () => {
   const [editingComment, setEditingComment] = useState("");
 
   useEffect(() => {
-    setCurrBlog(blogs.find((blog) => blog.id === parseInt(id)));
-  }, [id]);
+    const blog = blogs.find((blog) => blog.id === parseInt(id));
+    setCurrBlog(blog);
+  }, [id, blogs]);
 
   if (!currBlog) return <NotFound />;
 
@@ -104,7 +105,7 @@ const SingleBlog = () => {
   return (
     <>
       <Navbar />
-      <div className="blog-card ">
+      <div className="blog-card">
         <div className="name-and-button">
           <b>
             @UserId{currBlog.userId}-Blog{currBlog.id}
@@ -157,7 +158,7 @@ const SingleBlog = () => {
                     </div>
                   </div>
 
-                  {isEditing == comment.id ? (
+                  {isEditing === comment.id ? (
                     <>
                       <textarea
                         defaultValue={comment.body}

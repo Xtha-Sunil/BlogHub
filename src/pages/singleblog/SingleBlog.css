@@ -7,6 +7,13 @@
   background-color: #f9f9f9;
 }
 
+@media (max-width: 768px) {
+  .blog-card {
+    padding: 10px;
+    max-width: 95%;
+  }
+}
+
 .name-and-button {
   display: flex;
   justify-content: space-between;
@@ -100,9 +107,11 @@
   cursor: pointer;
   font-size: 1.4rem;
 }
+
 .fa-pen-to-square {
   color: blue;
 }
+
 .fa-trash {
   color: red;
   margin-left: 20px;

@@ -41,3 +41,21 @@ body {
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
