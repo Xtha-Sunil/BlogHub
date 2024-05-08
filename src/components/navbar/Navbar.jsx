@@ -33,18 +33,21 @@ const Navbar = () => {
             </Link>
           </div>
           {location.pathname == "/" && (
-            <>
+            <div>
               <Link to="/addblog" className="logo-link">
                 Add Blog
               </Link>
-
+            </div>
+          )}
+          {location.pathname == "/" && (
+            <div>
               <input
                 type="text"
                 placeholder="post:1"
                 name="find"
                 onChange={handleChange}
               />
-            </>
+            </div>
           )}
         </div>
       </nav>
