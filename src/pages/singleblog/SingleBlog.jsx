@@ -38,7 +38,7 @@ const SingleBlog = () => {
 
     const commentData = {
       postId: currBlog.id,
-      id: 500,
+      id: 502,
       name: "John Doe",
       email: "info@example.com",
       body: newComment,
@@ -75,8 +75,8 @@ const SingleBlog = () => {
       });
   };
 
-  const editComment = (comment) => {
-    setEditing(comment.id);
+  const editComment = (comment, index) => {
+    setEditing(index);
     setEditingComment(comment.body);
   };
 
@@ -86,7 +86,7 @@ const SingleBlog = () => {
 
   const saveEditingComment = (editedComment) => {
     axios
-      .put(
+      .patch(
         `https://jsonplaceholder.typicode.com/comments/${editedComment.id}`,
         editedComment
       )
@@ -149,7 +149,7 @@ const SingleBlog = () => {
                     <div>
                       <i
                         className="fa-solid fa-pen-to-square"
-                        onClick={() => editComment(comment)}
+                        onClick={() => editComment(comment, index)}
                       ></i>
                       <i
                         className="fa-solid fa-trash"
@@ -158,7 +158,7 @@ const SingleBlog = () => {
                     </div>
                   </div>
 
-                  {isEditing === comment.id ? (
+                  {isEditing === index ? (
                     <>
                       <textarea
                         defaultValue={comment.body}

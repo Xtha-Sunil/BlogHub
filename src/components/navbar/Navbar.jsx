@@ -45,6 +45,7 @@ const Navbar = () => {
                 type="text"
                 placeholder="post:1"
                 name="find"
+                className="find"
                 onChange={handleChange}
               />
             </div>

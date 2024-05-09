@@ -38,7 +38,7 @@ const EditBlog = () => {
     };
 
     axios
-      .put(`https://jsonplaceholder.typicode.com/posts/${id}`, updatedPost)
+      .patch(`https://jsonplaceholder.typicode.com/posts/${id}`, updatedPost)
       .then(() => {
         const updatedBlogs = blogs.map((blog) =>
           blog.id === parseInt(id) ? { ...blog, title, body } : blog
