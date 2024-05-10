@@ -26,8 +26,9 @@ body {
   justify-content: space-around;
   width: 95%;
 }
+
 .card {
-  width: calc(25% - 20px);
+  width: calc(33.33% - 20px);
   height: 250px;
   margin: 10px;
   padding: 10px;
@@ -44,13 +45,13 @@ body {
 
 @media (max-width: 1200px) {
   .card {
-    width: calc(33.33% - 20px);
+    width: calc(50% - 20px); /* Changed from 33.33% */
   }
 }
 
 @media (max-width: 800px) {
   .card {
-    width: calc(50% - 20px);
+    width: calc(50% - 20px); /* Changed from 50% */
   }
 }
 
@@ -58,4 +59,29 @@ body {
   .card {
     width: calc(100% - 20px);
   }
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: cyan;
+  color: black;
+}
+
+.pagination .active {
+  background-color: red;
 }

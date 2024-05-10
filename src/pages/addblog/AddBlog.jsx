@@ -35,7 +35,7 @@ const AddBlog = () => {
     axios
       .post("https://jsonplaceholder.typicode.com/posts", newBlog)
       .then((response) => {
-        setBlogs((prevBlogs) => [...prevBlogs, response.data]);
+        setBlogs((prevBlogs) => [response.data, ...prevBlogs]);
         handleCancelClick();
       })
       .catch((error) => {
